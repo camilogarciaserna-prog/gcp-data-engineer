@@ -9,7 +9,7 @@ def main():
     bucket_name = args.bucket_name
     print(f"Bucket name received: {bucket_name}")
     # Aquí puedes agregar la lógica para crear el bucket
-    storage_client = storage.Client(project="project-b0f6c95f-af40-44f1-998")
+    storage_client = storage.Client(project="curso-04-dataflow")
     bucket = storage_client.bucket(bucket_name)
     bucket.storage_class = "STANDARD"
     new_bucket = storage_client.create_bucket(bucket, location="us-east1")

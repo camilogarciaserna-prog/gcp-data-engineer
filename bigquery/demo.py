@@ -1,7 +1,7 @@
 from google.cloud import bigquery
 
 def query_public_dataset():
-    client = bigquery.Client(project="project-b0f6c95f-af40-44f1-998")
+    client = bigquery.Client(project="curso-04-dataflow")
 
     query = """
     SELECT order_items.id, order_id, product_id, products.name
